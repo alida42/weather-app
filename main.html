@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    , initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Weather Forecast</title>
+    <script src="https://kit.fontawesome.com/b1e87d37a9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-image">
+
+        <h1>WEATHER</h1>
+
+        <div class="nav-container">
+            <form id="search-form">
+                <ul class="nav">
+
+                    <li>
+                        <span class="input-icons" id="city-search" value="search">
+                            <input class="location" type="text" id="input-location" autocomplete="off"
+                                placeholder="Enter a location..." />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </li>
+
+                    <li>
+                        <button type="submit" class="searchButton">
+                            Search
+                        </button>
+                    </li>
+
+                    <li>
+                        <button type="submit" class="currentButton" id="location-button">
+                            <i class="fa-solid fa-location-arrow fa-15px"></i>
+                        </button>
+                    </li>
+                </ul>
+            </form>
+
+        </div>
+
+        <div class="container-info">
+            <i class="fa-solid fa-sun" id="TodayIcon"></i>
+            <ul class="today">
+
+                <li id="city">
+                    Stockholm
+                </li>
+
+                <li>
+                    <span class="temperature" id="temp-element">26</span>
+                    <a href="#" id="celsius">°C</a>
+                    <a href="#" id="fahrenheit">/°F</a>
+                    </span>
+                </li>
+            </ul>
+
+            </br>
+
+            <ul class="specifications">
+                <li class="description" id="description">
+                    Sunny
+                </li>
+
+                <li class="time-date0" id="current-time">
+                </li>
+            </ul>
+
+            <ul class="week">
+
+                <li>
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    </br>
+                    Tue 17°C
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-sun"></i>
+                    </br>
+                    Wed 22°C
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cloud-bolt"></i>
+                    </br>
+                    Thu 19°C
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    </br>
+                    Fri 12°C
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-tornado"></i>
+                    </br>
+                    Sat 15°C
+                </li>
+            </ul>
+
+            <button class="favouriteButton">
+                <i class="fa-solid fa-plus"></i>
+                ADD FAVOURITE
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
