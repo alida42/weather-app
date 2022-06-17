@@ -214,3 +214,10 @@ p {
     text-align: left;
     padding: none;
 }
+.endCard {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 40px;
+}
